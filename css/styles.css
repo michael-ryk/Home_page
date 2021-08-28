@@ -4,11 +4,11 @@
 
 /* Color Defenition */
 :root {
-    --primary: #CCF2F4;
-    --primary-light: #F4F9F9;
-    --secondary: #A4EBF3;
-	--tertiary: #AAAAAA;
-    --gradient: linear-gradient(to right, #AAAAAA, #A4EBF3);
+    --primary: #0086D9;
+    --primary-light: #0CD4F0;
+    --secondary: #0C5CF0;
+	--tertiary: #0BE6C4;
+    --gradient: linear-gradient(to right, #0BE6C4, #0CD4F0);
 }
 
 /* General Styles */
@@ -46,15 +46,14 @@ h4 {
 
 /* Sections Background */
 .home,
-.Information,
-.hobies
+.about,
+.kitesurfing,
 .location {
-    background-color: var(--primary-light)ж
+    background-color: var(--primary-light);
 }
 
 .projects,
-.about,
-.kitesurfing
+.hobies,
 .contact {
     background-color: var(--primary);
 }

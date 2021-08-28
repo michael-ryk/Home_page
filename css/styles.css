@@ -4,11 +4,11 @@
 
 /* Color Defenition */
 :root {
-    --primary: #0086D9;
-    --primary-light: #0CD4F0;
-    --secondary: #0C5CF0;
-	--tertiary: #0BE6C4;
-    --gradient: linear-gradient(to right, #0BE6C4, #0CD4F0);
+    --primary: #48a9c5;
+    --primary-light: #74d2e7;
+    --secondary: #0085ad;
+	--tertiary: #005670;
+    --gradient: linear-gradient(to right, #74d2e7, #00205b);
 }
 
 /* General Styles */
@@ -29,6 +29,11 @@ h1 {
 
 button {
     font-family: sans-serif;
+}
+
+/* todo: make buttons change color on hover */
+button :hover{
+    color: red;
 }
 
 p,

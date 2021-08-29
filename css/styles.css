@@ -4,11 +4,11 @@
 
 /* Color Defenition */
 :root {
-    --primary: #48a9c5;
-    --primary-light: #74d2e7;
-    --secondary: #0085ad;
+    --primary: #B8E3FF;
+    --primary-light: #e5f5ff;
+    --secondary: ##5CBBFF;
 	--tertiary: #005670;
-    --gradient: linear-gradient(to right, #74d2e7, #00205b);
+    --gradient: linear-gradient(to right, #5CBBFF, #0038c6);
 }
 
 /* General Styles */

@@ -122,6 +122,16 @@ h4 {
     height:360px;
 } */
 
+.btn {
+    color: grey;
+	border-width: 2px;
+	padding: 10px 30px;
+	border-image-slice: 1;
+	/* background-image: none; */
+	/* background: transparent; */
+	border-image-source: var(--gradient);
+	box-shadow: 5px 5px 0px 0px var(--tertiary);
+}
 
 /**************************/
 /*  Back to Top Button    */

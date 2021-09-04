@@ -27,22 +27,12 @@ h1 {
     font-weight: 500;
 }
 
-button {
-    font-family: sans-serif;
-}
-
-/* todo: make buttons change color on hover */
-button :hover{
-    color: red;
-}
-
 p,
 ul,
 h4 {
 	margin: 0;
 	padding: 0;
 }
-
 
 #mainheader {
     background-color: #a593c2;
@@ -96,11 +86,6 @@ h4 {
 	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.025);
 }
 
-/* Left side of navbar */
-.navbar .navbar-brand {
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-}
 
 /* TODO: add logo image */
 .navbar .logo-image img {
@@ -116,21 +101,25 @@ h4 {
 	text-decoration: none;
 }
 
-/* Carousel */
-/* .carousel {
-    width: 640px;
-    height:360px;
-} */
 
+/* All buttons on page */
 .btn {
-    color: grey;
+    color: var(--tertiary);
 	border-width: 2px;
 	padding: 10px 30px;
 	border-image-slice: 1;
-	/* background-image: none; */
+	background-image: none;
 	/* background: transparent; */
 	border-image-source: var(--gradient);
 	box-shadow: 5px 5px 0px 0px var(--tertiary);
+}
+
+.btn:hover {
+	color: #0038c6;
+	box-shadow: none;
+	border-radius: 0;
+	padding: 10px 30px;
+	transform: translate(5px, 5px);
 }
 
 /**************************/

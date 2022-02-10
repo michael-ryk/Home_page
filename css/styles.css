@@ -1,162 +1,93 @@
-/************************/
-/*  General Settings    */       
-/************************/
-
-/* Color Defenition */
-:root {
-    --primary: #B8E3FF;
-    --primary-light: #e5f5ff;
-    --secondary: ##5CBBFF;
-	--tertiary: #005670;
-    --gradient: linear-gradient(to right, #5CBBFF, #0038c6);
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 
-/* General Styles */
-body {
-    margin-top: 0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    /* background-color: #AAAAAA; */
-    /* background-image: url('../images/pattern.png'); */
+a {
+    text-decoration: noen;
 }
 
-h1 {
-    font-size: 60px;
-    font-weight: 500;
-}
-
-p,
 ul,
-h4 {
-	margin: 0;
-	padding: 0;
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
 }
 
-.centered {
-	text-align: center;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
 }
-
-.preview-pic {
-	width: 80%;
-	align-self: center;
-	margin: 5%;
-}
-
-#mainheader {
-    background-color: #a593c2;
-    display: flex;
-}
-
-/* Sections Background */
-.home,
-.about,
-.kitesurfing,
-.location {
-    background-color: var(--primary-light);
-}
-
-.projects,
-.hobies,
-.contact {
-    background-color: var(--primary);
-}
-
-/* Gradient and background of icons */
-.navbar-nav a:hover,
-.footer a:hover,
-.footer .fab:hover {
-    cursor: pointer;
-    background: var(--gradient);
-    background-clip: text;
-    -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-/****************/
-/*  Sections    */
-/****************/
-
-/* Navigation */
-.navbar {
-    transition: all 0.4s;
-    padding-top: 2rem;
-    background-color: var(--primary);
-    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.025);
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 1rem;
-}
-
-.navbar.top-nav-collapse {
-    padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
-	background-color: var(--primary);
-	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.025);
-}
-
-
-/* TODO: add logo image */
-.navbar .logo-image img {
-	width: 100px;
-	height: 30px;
-}
-
-.navbar .logo-text {
-	/* color: #fff; */
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 14px;
+    color: #252B42;
 	font-weight: 500;
-	line-height: 1rem;
-	font-size: 2.5rem;
-	text-decoration: none;
+	font-family: 'Montserrat';
 }
 
-
-/* All buttons on page */
-.btn {
-    color: var(--tertiary);
-	border-width: 2px;
-	padding: 10px 30px;
-	border-image-slice: 1;
-	background-image: none;
-	/* background: transparent; */
-	border-image-source: var(--gradient);
-	box-shadow: 5px 5px 0px 0px var(--tertiary);
+/* Wrapper---------------------------------------------- */
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
 }
 
-.btn:hover {
-	color: #0038c6;
-	box-shadow: none;
-	border-radius: 0;
-	padding: 10px 30px;
-	transform: translate(5px, 5px);
+/* Restricting container-------------------------------- */
+._container {
+	max-width: 1040px;
+	margin: 0px auto;
 }
 
-/**************************/
-/*  Back to Top Button    */
-/**************************/
-
-#myBtn {
-	z-index: 99;
-	right: 20px;
-	width: 52px;
-	height: 52px;
-	bottom: 20px;
-	border: none;
-	outline: none;
-	display: none;
-	position: fixed;
-	cursor: pointer;
-	border-radius: 50%;
-	background-color: #323137;
+/* Header ---------------------------------------------- */
+.header {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 50;
+}
+.header__container {
+	display: flex;
+	min-height: 100px;		/*Prevent close */
+	align-items: center;
 }
 
-#myBtn:hover {
-  	background-color: #0f0f11;
+.header__logo {
+	font-size: 24px;
+	font-weight: 700;
+	color: inherit;			/*Take it from parent */
+}
+.header__menu {
+	margin: 0 0 0 140px;
+}
+.menu {
+}
+.menu__list {
+	display: flex;
+}
+.menu__item {
+	margin: 0 0 0 20px;
 }
 
-#myBtn img {
-	width: 18px;
-	margin-left: 0.125rem;
-	margin-bottom: 0.25rem;
+.menu__item:not(:last-child) {
+	margin: 0 21px 0 0;
+}
+
+.menu__link {
+	color: #737373;
+	font-weight: 600;
+	line-height: 24px; 
 }

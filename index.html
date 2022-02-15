@@ -29,13 +29,13 @@
 				<nav class="header__menu menu">
 					<ul class="menu__list">
 						<li class="menu__item">
-							<a href="" class="menu__link">Home</a>
+							<a href="#" class="menu__link">Home</a>
 						</li>
 						<li class="menu__item">
 							<a href="" class="menu__link">About me</a>
 						</li>
 						<li class="menu__item">
-							<a href="" class="menu__link">My projects</a>
+							<a href="#projects" class="menu__link">My projects</a>
 						</li>
 						<li class="menu__item">
 							<a href="" class="menu__link">Contact</a>
@@ -123,7 +123,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__projects projects">
+			<section class="page__projects projects" id="projects">
 				<div class="projects__container _container">
 					<div class="projects__header header-block">
 						<h2 class="header-block__title">My Projects</h2>
@@ -131,20 +131,20 @@
 					</div>
 					<div class="projects__body">
 						<div class="projects__column">
-							<div class="projects__item item-project">
+							<div class="projects__item item-projects">
 								<div class="item-projects__content">
 									<a href="" class="item-projects__link">
-										<h4 class="item-projects__title">Commerce shop</h4>
+										<h4 class="item-projects__title">Commerce online shop</h4>
 									</a>
 									<div class="item-projects__text">Online shop on React JS. Price filters, state management</div>
-									<a href="" class="item-projects__image_in-progress _ibg">
+									<a href="" class="item-projects__image item-projects__image_in-progress _ibg">
 										<img src="images/In-progress.png" alt="project preview">
 									</a>
 								</div>
 							</div>
 						</div>
 						<div class="projects__column">
-							<div class="projects__item item-project">
+							<div class="projects__item item-projects">
 								<div class="item-projects__content">
 									<a href="https://michael-ryk.github.io/task-manager/" class="item-projects__link">
 										<h4 class="item-projects__title">To-Do list</h4>
@@ -157,7 +157,7 @@
 							</div>
 						</div>
 						<div class="projects__column">
-							<div class="projects__item item-project">
+							<div class="projects__item item-projects">
 								<div class="item-projects__content">
 									<a href="https://michael-ryk.github.io/drums-game/" class="item-projects__link">
 										<h4 class="item-projects__title">Interactive drums</h4>
@@ -170,7 +170,7 @@
 							</div>
 						</div>
 						<div class="projects__column">
-							<div class="projects__item item-project">
+							<div class="projects__item item-projects">
 								<div class="item-projects__content">
 									<a href="https://michael-ryk.github.io/simon-game/" class="item-projects__link">
 										<h4 class="item-projects__title">Simon</h4>
@@ -183,7 +183,7 @@
 							</div>
 						</div>						
 						<div class="projects__column">
-							<div class="projects__item item-project">
+							<div class="projects__item item-projects">
 								<div class="item-projects__content">
 									<a href="https://github.com/michael-ryk/blog-v2" class="item-projects__link">
 										<h4 class="item-projects__title">Blog</h4>
@@ -198,220 +198,52 @@
 					</div>
 				</div>
 			</section>
+			<section class="page__favoritsport favoritsport">
+				<div class="favoritsport__container _container">
+					<div class="favoritsport__header header-block">
+						<h2 class="header-block__title">Favorite sport - Kitesurfing</h2>
+						<div class="header-block__sub-title">My favorite sport - Kitesurfing. Surfing using wind power.</div>
+					</div>
+					<div class="favoritsport__body">
+						<div class="favoritsport__video">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/knl49xzXqR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="favoritsport__content">
+							<h2 class="favoritsport__title">Kitesurfing characteristics</h2>
+							<div class="favoritsport__text">Kitesurfing is a special sport. It became very popular in last 5 years and community of surfers continiue to grow. There are few points that makes it sport special</div>
+							<div class="favoritsport__items">
+								<div class="favoritsport_item item-favoritsport">
+									<div class="item-favoritsport__icon"><img src="images/water.png" alt="surfer"></div>
+									<div class="item-favoritsport__body">
+										<div class="item-favoritsport__title">Water sport</div>
+										<div class="item-favoritsport__text">You always breathe healfy sea air</div>
+									</div>
+								</div>
+								<div class="favoritsport_item item-favoritsport">
+									<div class="item-favoritsport__icon"><img src="images/barbel.png" alt="surfer"></div>
+									<div class="item-favoritsport__body">
+										<div class="item-favoritsport__title">Physical Activity</div>
+										<div class="item-favoritsport__text">Strenghten muscules</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
 		</main>
-
-		<footer class="footer">
-			
-		</footer>
-
-		<!-- Hobbies -->
-		<!-- <section class="hobies d-flex align-items-center py-5" id="hobies">
-			<div class="container text-black-50">
-				<div class="text-center pb-4">
-					<h2 class="py-2">My Hobies</h2>
-					<p class="para-light">
-						I am excited with Kitesurfing, explore ways to organize information
-						and enjoy bicycle rides
-					</p>
-				</div>
-				<div class="row gy-4" data-aos="zoom-in">
-					<div class="col-lg-4">
-						<div class="card bg-transparent px-4">
-							<h4 class="py-2">Kitesurfing</h4>
-							<p class="py-3">Kitesurfing - Mostly in Meditreinian sea</p>
-							<img src="images/kitesurfing1.jpg" class="d-block w-100" alt="kitesurf-picture" />
-							<div class="block d-flex align-items-center">
-								<p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-								<p>Adrenaline boost</p>
-							</div>
-							<div class="block d-flex align-items-center">
-								<p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-								<p>Extreme sport</p>
-							</div>
-							<div class="block d-flex align-items-center">
-								<p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-								<p>Sea sport</p>
-							</div>
-							<div class="my-3 text-center">
-								<a class="btn" href="#kitesurfing">More pictures of kitesurfing</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4">
-						<div class="card bg-transparent px-4">
-							<h4 class="py-2">Information systematization</h4>
-							<p class="py-3">Better ways to orginize information</p>
-							<img src="images/hobie-file.jpg" class="d-block" alt="kitesurf-picture" />
-							<div class="block d-flex align-items-center">
-								<p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-								<p>zettelkasten method</p>
-							</div>
-							<div class="block d-flex align-items-center">
-								<p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-								<p>Best folder organization methods</p>
-							</div>
-							<div class="block d-flex align-items-center">
-								<p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-								<p>Clean Desktop</p>
-							</div>
-							<div class="block d-flex align-items-center">
-								<p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-								<p>Empty inbox</p>
-							</div>
-							<div class="block d-flex align-items-center">
-								<p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-								<p>Get things done</p>
-							</div>
-							<div class="my-3 text-center">
-								<a class="btn" href="#info-organize">Info Organization</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4">
-						<div class="card bg-transparent px-4">
-							<h4 class="py-2">Bycicle rides</h4>
-							<p class="py-3">Great calm sport activity</p>
-							<img src="images/hobie-bycicle.jpg" class="d-block w-100" alt="kitesurf-picture" />
-							<div class="block d-flex align-items-center">
-								<p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-								<p>Great aerobic activity</p>
-							</div>
-							<div class="block d-flex align-items-center">
-								<p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-								<p>Increase of endurance</p>
-							</div>
-							<div class="block d-flex align-items-center">
-								<p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-								<p>Family oriented</p>
-							</div>
-							<div class="my-3 text-center">
-								<a class="btn" href="#your-link">View Bycicle photo</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section> -->
-		<!-- end of hobies -->
-
-		<!-- Kitesurfing -->
-		<!-- <section class="kitesurfing d-flex align-items-center py-5 text-black-50" id="kitesurfing">
-			<div id="carouselExampleIndicators" class="container carousel slide" data-bs-ride="carousel">
-				<div class="text-left pb-4">
-					<h2 class="py-2 text-center">Kitesurfing</h2>
-					<h4>About kitesurfing</h4>
-					<p class="para-light">
-						Kitesurfing is a wind powered surface watersport using a kite and a board to move across the water.</p>
-					<h4>How it works?</h4>
-					<p class="para-light">
-						Kitesurfing harnesses the power of the wind through a large parachute type kite to propel
-						a rider across the
-						water on a small surfboard or a kiteboard (similar to a wakeboard).
-					</p>
-					<h4>Some Pictures of Kitesurfing</h4>
-				</div>
-
-				<div class="carousel-indicators">
-					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-						aria-current="true" aria-label="Slide 1"></button>
-					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-						aria-label="Slide 2"></button>
-					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-						aria-label="Slide 3"></button>
-				</div>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img src="images/kitesurfing1.jpg" class="d-block w-100" alt="kitesurf-picture" />
-					</div>
-					<div class="carousel-item">
-						<img src="images/kitesurfing2.jpg" class="d-block w-100" alt="kitesurf-picture" />
-					</div>
-					<div class="carousel-item">
-						<img src="images/kitesurfing3.jpg" class="d-block w-100" alt="kitesurf-picture" />
-					</div>
-				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-					data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-					data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
-			</div>
-		</section> -->
-		<!-- end of Kitesurfing -->
-
-		<!-- Contact -->
-		<!-- <section class="contact d-flex align-items-center py-5" id="contact">
-			<div class="container-fluid text-black-50">
-				<div class="row">
-					<div class="
-				col-lg-6
-				d-flex
-				justify-content-center justify-content-lg-end
-				align-items-center
-				px-lg-5
-				" data-aos="fade-right">
-						<div style="width: 90%">
-							<div class="text-center text-lg-start py-4 pt-lg-0">
-								<h2>Contact</h2>
-								<h4 class="py-2">Please leave me a message</h4>
-							</div>
-							<div>
-								<div class="row">
-									<div class="col-lg-6">
-										<div class="form-group py-2">
-											<input type="text" class="form-control form-control-input" id="exampleFormControlInput1"
-												placeholder="Enter name" />
-										</div>
-									</div>
-									<div class="col-lg-6">
-										<div class="form-group py-2">
-											<input type="email" class="form-control form-control-input" id="exampleFormControlInput2"
-												placeholder="Enter phone number" />
-										</div>
-									</div>
-								</div>
-								<div class="form-group py-1">
-									<input type="email" class="form-control form-control-input" id="exampleFormControlInput3"
-										placeholder="Enter email" />
-								</div>
-								<div class="form-group py-2">
-									<textarea class="form-control form-control-input" id="exampleFormControlTextarea1" rows="6"
-										placeholder="Message"></textarea>
-								</div>
-							</div>
-							<div class="my-3">
-								<a class="btn form-control-submit-button" href="#your-link">Submit</a>
-							</div>
-						</div>
-						end of div -->
-					</div> -->
-					<!-- end of col -->
-					<!-- <div class="col-lg-6 d-flex align-items-center" data-aos="fade-down">
-						<img class="img-fluid d-none d-lg-block" src="images/buisness-hands.jpg" alt="contact" />
-					</div> -->
-					<!-- end of col -->
-				</div>
-				<!-- end of row -->
-			</div>
-			<!-- end of container -->
-		</section> -->
-		<!-- end of contact -->
-
-		<footer></footer>
 
 		<!-- Back To Top Button -->
 		<button onclick="topFunction()" id="myBtn">
 			<img src="images/up-arrow.png" alt="alternative" />
 		</button>
 		<!-- end of back to top button -->
+		
+		<footer class="footer">
+			
+		</footer>
+
 
 		<!-- Scripts -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"

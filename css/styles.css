@@ -416,12 +416,16 @@ body {
 .item-projects {
 	display: flex;
 	flex-direction: column;
+	transition: transform .3s;
 }
+.item-projects:hover {
+	transform: scale(1.1);
+}
+
 .item-projects__content {
 	padding: 20px;
 	flex: 1 1 auto;
 }
-height: 100%;
 .item-projects__link {
 	color: inherit;
 	display: inline-block;

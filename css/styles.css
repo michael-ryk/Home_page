@@ -248,6 +248,10 @@ body {
 	background: #ff7b47;
 	color: #fff;
 }
+.main-block__button_main:hover {
+	background-color: #252B42;
+}
+
 .main-block__button_secondary {
 	color: #0d5555;
 	border: 1px solid #0d5555;
@@ -589,4 +593,23 @@ height: 100%;
 .menu-footer__link {
 	color: #fff;
 	letter-spacing: 0.5px;
+}
+
+/* Scroll to Top button ------------------------------------------- */
+#btnToTop {
+	display: none; 
+	/* display: block; */
+	position: fixed; 				/* sticky position following scroll*/
+	background-color: #ff7b47;
+	color: #fff;
+	cursor: pointer;
+	padding: 10px 35px;
+	bottom: 5px;
+	right: 5px;
+	z-index: 3;
+	border-radius: 20px;
+	min-height: 50px;
+}
+#btnToTop:hover {
+	background-color: #252B42;
 }

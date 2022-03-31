@@ -23,3 +23,8 @@ function scrollToTop() {
     document.body.scrollTop = 0;                // for Safari
     document.documentElement.scrollTop = 0;     // for Chrome, Firefox, IE and Opera
 }
+
+// Alert on contact button press
+function contactMe() {
+    alert("To prevent spam on my email, please contact using information from my CV or LinkedIn profile")
+}

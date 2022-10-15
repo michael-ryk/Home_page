@@ -5,11 +5,11 @@ const Welcome = () => {
   const {intro, myName, whoAmI, aboutMeText } = welcome;
   return (
     <WelcomeStyle>
-      <p>{intro}</p>
-      <h1 className='my-name'>{myName}</h1>
-      <h2>{whoAmI}</h2>
-      <p>{aboutMeText}</p>
-      <h3>View my work</h3>
+      <p className='appearing'>{intro}</p>
+      <h1 className='my-name appearing'>{myName}</h1>
+      <h2 className='appearing'>{whoAmI}</h2>
+      <p className='appearing'>{aboutMeText}</p>
+      <h3 className='appearing'>View my work</h3>
     </WelcomeStyle>
   )
 }
@@ -21,7 +21,20 @@ const WelcomeStyle = styled.section`
     background-clip: text;
     -webkit-background-clip: text;    /*may need in other browsers*/
     -webkit-text-fill-color: transparent;
-    animation: changingBackgroundGradient 5s linear infinite;
+    animation: changingBackgroundGradient 3s linear infinite;
+  }
+
+  .appearing {
+    animation: appearingEffect 5s linear ;
+  }
+
+  @keyframes appearingEffect {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
   @keyframes changingBackgroundGradient {

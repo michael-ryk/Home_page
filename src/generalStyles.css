@@ -1,8 +1,32 @@
+:root {
+  /* Grid general variables */
+  --grid-layout-gap: 10px;
+  --grid-column-count: 3;
+  --grid-item--min-width: 300px;
+
+  /* Calculated values */
+  --gap-count: calc(var(--grid-column-count) - 1);
+  --total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));
+  --grid-item--max-width: calc((100% - var(--total-gap-width)) / var(--grid-column-count));
+}
+
 /* General CSS styles and variables */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-align: center;
+  background-color: #282c34;
+  color: white;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 body {

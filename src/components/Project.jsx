@@ -4,7 +4,10 @@ const Project = ({name, description, creationDate}) => {
 
   return (
     <ProjectStyle>
-      <h1>{name}</h1>
+      <div className='image-container'>
+        {/* Image will be here */}
+      </div>
+      <h2>{name}</h2>
       <p>{description}</p>
       <p>{creationDate}</p>
     </ProjectStyle>
@@ -13,8 +16,11 @@ const Project = ({name, description, creationDate}) => {
 
 const ProjectStyle = styled.section`
   border: 1px solid white;
-  width: 350px;
   min-height: 300px;
+
+  .image-container {
+    width: 300px;
+  }
 `
 
 export default Project;

@@ -17,19 +17,21 @@ const Projects = () => {
   )
 }
 
-const ProjectsStyle = styled.header`
-  /* width: 100%; */
+const ProjectsStyle = styled.section`
+  max-width: 90%;
   height: 100vh;
+  margin: 0 auto;
 
+  
   .projects-description {
     margin: 2rem auto;
   }
-
+  
   .projects-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    place-items: center;
-    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));
+    justify-content: center;
+    gap: var(--grid-layout-gap);
   }
 
 `

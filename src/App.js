@@ -7,26 +7,22 @@ import styled from 'styled-components';
 
 function App() {
   return (
-    <AppStyle>
+    <AppStyled>
       <Header />
       <main>
         <Welcome />
         <Projects />
       </main>
       <Footer />
-    </AppStyle>
+    </AppStyled>
   );
 }
 
-const AppStyle = styled.div`
-  text-align: center;
-  background-color: #282c34;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+const AppStyled = styled.div`
+  main {
+    /* display: flex; */
+    /* flex-direction: column; */
+  }
 `
 
 export default App;

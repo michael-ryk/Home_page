@@ -10,7 +10,6 @@ const Header = () => {
 }
 
 const HeaderStyle = styled.header`
-  
 `
 
 export default Header;

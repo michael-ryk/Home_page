@@ -12,8 +12,8 @@ const Welcome = () => {
       <h2 className='fade-in who-am-i'>{whoAmI}</h2>
       <p className='fade-in about-me'>{aboutMeText}</p>
       <div className='fade-in quick-links'>
-        <span>View my work </span>
-        <span> Contact me</span>
+        <button>View my work</button>
+        <button>Contact me</button>
       </div>
     </WelcomeStyle>
   )
@@ -22,12 +22,17 @@ const Welcome = () => {
 const WelcomeStyle = styled.section`
   max-width: 800px;
   height: 100vh;
+  margin: 10rem auto 0;
   .fade-in {
     opacity: 0;
     animation: fadeIn 1s ease-in forwards;
   }
-  .my-name-container {animation-delay: 0.5s;}
+  .my-name-container {
+    margin: 1.5rem auto;
+    animation-delay: 0.5s;
+  }
   .my-name {
+    font-size: 4rem;
     background: linear-gradient(45deg, #23d5ab, #ee7752, #e73c7e, #23a6d5, #23d5ab, #ee7752, #e73c7e, #23a6d5);
     background-size: 200% auto;
     background-clip: text;
@@ -35,12 +40,36 @@ const WelcomeStyle = styled.section`
     -webkit-text-fill-color: transparent;
     animation: changingBackgroundGradient 5s linear infinite;
   }
-  .who-am-i {animation-delay: 1s;}
+  .who-am-i {
+    animation-delay: 1s;
+    font-size: 2.5rem;
+  }
   .about-me {
     animation-delay: 1.5s;
+    margin: 2.5rem auto;
     text-align: left;
   }
-  .quick-links {animation-delay: 2s;}
+  .quick-links {
+    animation-delay: 2s;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    button {
+      font: inherit;
+      padding: 0.5rem 1rem;
+      border: 4px solid #007099;
+      border-radius: 0.5rem;
+      color: white;
+      background: transparent;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
+      cursor: pointer;
+    }
+    button:hover,
+    button:active {
+      background: #007099;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
+    }
+  }
 
   @keyframes changingBackgroundGradient {
     0% {background-position: 0% 50%;}

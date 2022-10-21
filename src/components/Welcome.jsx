@@ -12,7 +12,7 @@ const Welcome = () => {
       <p className='fade-in who-am-i'>{whoAmI}</p>
       <p className='fade-in about-me'>{aboutMeText}</p>
       <div className='fade-in quick-links'>
-        <button>View my work</button>
+        <a href='#my-projects'>View my work</a>
         <button>Contact me</button>
       </div>
     </WelcomeStyle>
@@ -65,7 +65,8 @@ const WelcomeStyle = styled.section`
     margin-top: 5rem;
     display: flex;
     justify-content: space-around;
-    button {
+    button, 
+    a {
       font: inherit;
       font-size: 2rem;
       padding: 0.6rem 1rem;
@@ -75,9 +76,12 @@ const WelcomeStyle = styled.section`
       background: transparent;
       box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
       cursor: pointer;
+      text-decoration: none;
     }
     button:hover,
-    button:active {
+    a:hover,
+    button:active,
+    a:hover {
       background: #007099;
       box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
     }

@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <ProjectsStyle>
       <div className='projects-description'>
-        <h1>My Projects</h1>
+        <h1 id='my-projects'>My Projects</h1>
         <h3>Here is a list of my projects done and which technologies learn</h3>
       </div>
       <div className='projects-container'>

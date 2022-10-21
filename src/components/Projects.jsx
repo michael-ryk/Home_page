@@ -22,6 +22,10 @@ const ProjectsStyle = styled.section`
   height: 100vh;
   margin: 0 auto;
   
+  @media only screen and (max-width: 650px){
+    max-width: 95%;
+  }
+
   .projects-description {
     margin: 2rem auto;
   }

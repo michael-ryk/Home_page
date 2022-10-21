@@ -87,6 +87,27 @@ const WelcomeStyle = styled.section`
     }
   }
 
+  @media only screen and (max-width: 650px){
+    .intro {
+      font-size: 1.5rem;
+    }
+    .my-name {
+      font-size: 3rem;
+    }
+    .who-am-i {
+      font-size: 2rem;
+    }
+    .about-me {
+      font-size: 1.25rem;
+    }
+  .quick-links {
+    button, 
+    a {
+      font-size: 1.5rem;
+    }
+  }
+}
+
   @keyframes changingBackgroundGradient {
     0% {background-position: 0% 50%;}
     50% {background-position: 100% 50%;}

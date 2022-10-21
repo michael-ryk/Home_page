@@ -20,7 +20,7 @@ const Project = ({name, description, thumbnailUrl, githubLink, liveDemoLink, cre
 const ProjectStyle = styled.section`
   position: relative;   /* For align buttons to bottom */
   border: 1px solid white;
-  border-radius: 1.5rem;
+  border-radius: 1.2rem;
   min-height: 300px;
   padding: 0.5rem 1rem 2rem;
   transition: transform .4s;
@@ -31,7 +31,7 @@ const ProjectStyle = styled.section`
       border-radius: 0.3rem;
       border: 2px solid white;
       width: 100%;
-      height: 15vw;
+      height: 40vh;
       object-fit: cover;
     }
   }
@@ -68,6 +68,14 @@ const ProjectStyle = styled.section`
       button:active {
         background: #007099;
         box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
+      }
+  
+      @media only screen and (max-width: 650px){
+        .image-container {
+          img {
+            height: 35vh;
+          }
+        }
       }
   }
 `

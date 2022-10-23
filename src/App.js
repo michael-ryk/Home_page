@@ -8,12 +8,12 @@ import styled from 'styled-components';
 function App() {
   return (
     <AppStyled>
-      <Header />
+      {/* <Header /> */}
       <main>
         <Welcome />
         <Projects />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </AppStyled>
   );
 }

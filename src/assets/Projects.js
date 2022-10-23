@@ -68,7 +68,6 @@ const projects = [
     description: 'Simple blog site based on NodeJS ExpressJS and EJS templates',
     thumbnailUrl: './images/preview-blog.png',
     githubLink: 'https://github.com/michael-ryk/blog-v2',
-    liveDemoLink: '',
     creationDate: '...',
   },
 ];

@@ -9,9 +9,9 @@ const Project = ({name, description, thumbnailUrl, githubLink, liveDemoLink, cre
         <img src={thumbnailUrl} alt="project preview" />
       </div>
       <p className='description'>{description}</p>
-      <div className='button-container'>
-        <button>Live Demo</button>
-        <button>Git Repo</button>
+      <div className='link-container'>
+        {liveDemoLink && <a href={liveDemoLink} target='_blank'>Live Demo</a>}
+        {githubLink && <a href={githubLink} target='_blank'>Git Repo</a>}
       </div>
     </ProjectStyle>
   )
@@ -46,13 +46,13 @@ const ProjectStyle = styled.section`
     text-align: left;
   }
 
-  .button-container {
+  .link-container {
     position: absolute; /* For align buttons to bottom */
     bottom: 0.7rem;
     width: 93%;         /*//TODO make it spread to max width instead set to approximate */
     display: flex;
     justify-content: space-between;
-    button {
+    a {
         font: inherit;
         font-size: 1.2rem;
         font-weight: bold;
@@ -63,9 +63,10 @@ const ProjectStyle = styled.section`
         background: transparent;
         box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
         cursor: pointer;
+        text-decoration: none;
       }
-      button:hover,
-      button:active {
+      a:hover,
+      a:active {
         background: #007099;
         box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
       }

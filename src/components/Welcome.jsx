@@ -13,7 +13,7 @@ const Welcome = () => {
       <p className='fade-in about-me'>{aboutMeText}</p>
       <div className='fade-in quick-links'>
         <a href='#my-projects'>View my work</a>
-        <button>Contact me</button>
+        <button onClick={() => alert('Currently contact form is under development and will be available soon - Feel free to contact me through LinkedIn for now: www.linkedin.com/in/michael-rykin ')}>Contact me</button>
       </div>
     </WelcomeStyle>
   )

@@ -12,9 +12,7 @@ const Backdrop = ({onBackdropClick}) => {
 const ModalOverlay = ({children}) => {
   return (
     <ModalStyle>
-      <div className='modal'>
-        <div className='modal-content'>{children}</div>
-      </div>
+      <div className='modal'>{children}</div>
     </ModalStyle>
   )
 }
@@ -45,10 +43,14 @@ const ModalStyle = styled.div`
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     z-index: 6;
   }
-  .modal-content {
-    
-  }
   
+  @media only screen and (max-width: 1100px){
+    .modal {
+      left: 5vw;
+      width: 90vw;
+    }
+  }
+
   /* Background Fog */
   .backdrop {
     position: fixed;

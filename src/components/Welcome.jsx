@@ -1,21 +1,34 @@
+import { useState } from 'react';
+
+import Modal from './UI/Modal';
+import ContactForm from './ContactForm';
+
 import { welcome } from '../assets/Constants';
 import styled from 'styled-components';
 
 const Welcome = () => {
   const {intro, myName, whoAmI, aboutMeText } = welcome;
+
+  const [modalShown, setModalShown] = useState(false);
+
+  const hideModal = () => {
+    setModalShown(false);
+  }
+
   return (
-    <WelcomeStyle>
-      <p className='fade-in intro'>{intro}</p>
-      <div className='fade-in my-name-container'>
-        <p className='my-name'>{myName}</p>
-      </div>
-      <p className='fade-in who-am-i'>{whoAmI}</p>
-      <p className='fade-in about-me'>{aboutMeText}</p>
-      <div className='fade-in quick-links'>
-        <a href='#my-projects'>View my work</a>
-        <button onClick={() => alert('Currently contact form is under development and will be available soon - Feel free to contact me through LinkedIn for now: www.linkedin.com/in/michael-rykin ')}>Contact me</button>
-      </div>
-    </WelcomeStyle>
+      <WelcomeStyle>
+        {modalShown && <ContactForm onCloseClick={hideModal}/>}
+        <p className='fade-in intro'>{intro}</p>
+        <div className='fade-in my-name-container'>
+          <p className='my-name'>{myName}</p>
+        </div>
+        <p className='fade-in who-am-i'>{whoAmI}</p>
+        <p className='fade-in about-me'>{aboutMeText}</p>
+        <div className='fade-in quick-links'>
+          <a href='#my-projects'>View my work</a>
+          <button onClick={() => {setModalShown(true)}}>Contact me</button>
+        </div>
+      </WelcomeStyle>
   )
 }
 

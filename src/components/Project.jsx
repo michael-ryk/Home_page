@@ -6,7 +6,7 @@ const Project = ({name, description, thumbnailUrl, githubLink, liveDemoLink, cre
     <ProjectStyle>
       <h2>{name}</h2>
       <div className='image-container'>
-        <img src={thumbnailUrl} alt="project preview" />
+        <img src={process.env.PUBLIC_URL + thumbnailUrl} alt="project preview" />
       </div>
       <p className='description'>{description}</p>
       <div className='link-container'>

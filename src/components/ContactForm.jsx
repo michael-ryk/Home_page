@@ -2,10 +2,16 @@ import Modal from './UI/Modal';
 import styled from 'styled-components';
 
 const ContactForm = ({onCloseClick}) => {
+
+const submitHandler = (e) => {
+  e.preventDefault();
+  alert("Your submit registered")
+}
+
 return (
   <Modal onBackdropClick={onCloseClick}>
     <ModalStyles>
-      <form>
+      <form onSubmit={submitHandler}>
         <h2>Please fill your details:</h2>
         <div className='inputs-container'>
           <label>Your name:</label>

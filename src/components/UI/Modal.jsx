@@ -33,7 +33,7 @@ const ModalStyle = styled.div`
   /* Popup modal window */
   .modal {
     position: fixed;
-    top: 30vh;
+    top: 10vh;
     left: 30vw;
     width: 40vw;
     background-color: black;
